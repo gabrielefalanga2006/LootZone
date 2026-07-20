@@ -1,0 +1,86 @@
+
+:root {
+    --bg-color: #111111; 
+    --surface-color: #1A1A1D; 
+    --border-color: #2C2C30; 
+    --text-primary: #FFFFFF; 
+    --text-secondary: #AAAAAA; 
+    --accent-green: #01FF70; 
+    --accent-blue: #7FDBFF; 
+    --accent-pink: #F012BE; 
+    --accent-orange: #FF851B; 
+    --error-color: #FF4136; 
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Orbitron', sans-serif;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--accent-pink);
+}
+.btn-primary {
+    background-color: var(--accent-pink);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    text-align: center;
+    display: inline-block;
+}
+.btn-primary:hover {
+    background-color: #d00b9f;
+}
+.btn-accent {
+    background-color: var(--accent-green);
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    text-align: center;
+    display: inline-block;
+}
+.btn-accent:hover {
+    background-color: #00e565;
+}
+.btn-danger {
+    background-color: var(--error-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+    .hero-banner { flex-direction: column; text-align: center; }
+    .hero-image { margin-top: 20px; }
+    .footer-content { flex-direction: column; align-items: center; text-align: center; gap: 30px; }
+    .evidenza-grid, .catalogo-grid { grid-template-columns: 1fr; }
+    .ordine-info > div { flex-direction: column; align-items: flex-start; }
+}
